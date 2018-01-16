@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Running_Button"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525" Margin="0">
     <Grid>
-        
+        <Button Name="button" Content="Нажми" Margin="0" MouseEnter="Button_MouseEnter" Padding="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Height="20" BorderBrush="White" FontFamily="Verdana" Click="Click_Button">
+            <Button.Background>
+                <SolidColorBrush Color="#FFB9FF00" Opacity="0.47"/>
+            </Button.Background>
+        </Button>
+
     </Grid>
 </Window>
