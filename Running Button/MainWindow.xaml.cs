@@ -42,18 +42,24 @@ namespace Running_Button
                 case 0:
                     if (left >= -this.Width + leftRight_Border)
                         left = (int)(button.Margin.Left - button.Width*2);
+                    else
+                        left = (int)(button.Margin.Left + button.Width * 2);
 
                     break;
 
                 case 1:
                     if (left <= this.Width - leftRight_Border)
                         left = (int)(button.Margin.Left + button.Width * 2);
+                    else
+                        left = (int)(button.Margin.Left - button.Width * 2);
 
                     break;
 
                 case 2:
                     if (bottom >= -this.Height + topBottom_Border)
                         bottom = (int)(button.Margin.Bottom - button.Height * 2);
+                    else
+                        bottom = (int)(button.Margin.Bottom + button.Height * 2);
 
                     break;
 
@@ -61,6 +67,8 @@ namespace Running_Button
                 case 3:
                     if (bottom <= this.Height - topBottom_Border)
                         bottom = (int)(button.Margin.Bottom + button.Height * 2);
+                    else
+                        bottom = (int)(button.Margin.Bottom - button.Height * 2);
 
                     break;
             }
